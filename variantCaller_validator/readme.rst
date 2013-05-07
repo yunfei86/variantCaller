@@ -10,17 +10,17 @@ Validate Variant Caller
 
 2. command.
 -------------
-1) Set truth file
+-  Set truth file
     $ #germline data takes one truth file
     $ TRUTH_FILES="-t ${MAJOR_TRUTH_FILE}"
     $ #Somatic data takes two truth files
     $ TRUTH_FILES="-t ${MAJOR_TRUTH_FILE} -T ${MINOR_TRUTH_FILE}"
 
-2) Start Validator
-    $ variantValidator_multi \
-    $ -i "${VARIANT}" \
-    $ -F "${VARIANT_filtered}" \
-    $ -b ${INPUT_BAM} \
-    $ -r ${REF_FILE} \
-    $ ${TRUTH_FILES} \
+-  Start Validator
+    $ variantValidator_multi 
+    $ -i "${VARIANT}" 
+    $ -F "${VARIANT_filtered}" 
+    $ -b ${INPUT_BAM} 
+    $ -r ${REF_FILE} 
+    $ ${TRUTH_FILES} 
     $ -o ${OUT_FOLDER
