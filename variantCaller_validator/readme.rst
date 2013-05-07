@@ -11,12 +11,14 @@ Validate Variant Caller
 2. command.
 -------------
 -  Set truth file
+
     $ #germline data takes one truth file
     $ TRUTH_FILES="-t ${MAJOR_TRUTH_FILE}"
     $ #Somatic data takes two truth files
     $ TRUTH_FILES="-t ${MAJOR_TRUTH_FILE} -T ${MINOR_TRUTH_FILE}"
 
 -  Start Validator
+
     $ variantValidator_multi 
     $ -i "${VARIANT}" 
     $ -F "${VARIANT_filtered}" 
@@ -24,10 +26,3 @@ Validate Variant Caller
     $ -r ${REF_FILE} 
     $ ${TRUTH_FILES} 
     $ -o ${OUT_FOLDER
-
-- tmp
-    $ perl  robust_peak_pair_stats.pl -h
-    $ Options: -i <path1>     path to the folder with index files [accepted index file extensions, idx, tab]. 
-    $          -d <path2>     path to the folder with S_*.gff and O_* files.   
-    $          -g             organism, sg07=>yeast, mm09=>MouseV9, mm08=>MouseV8, hg18=>human18, hg19=>human19, dm03=>Drosophila
-    $          -s            size of genome[optional] In case of other genomes, set -g as NA and -s as the size of genome (see ex. below)
