@@ -12,7 +12,7 @@ Validate Variant Caller
 -------------
 
 
--  Set truth file
+-  Set truth file::
 
     $ #germline data takes one truth file
     $ TRUTH_FILES="-t ${MAJOR_TRUTH_FILE}"
@@ -20,7 +20,7 @@ Validate Variant Caller
     $ TRUTH_FILES="-t ${MAJOR_TRUTH_FILE} -T ${MINOR_TRUTH_FILE}"
 
 
--  Start Validator
+-  Start Validator::
 
     $ variantValidator_multi 
     $ -i "${VARIANT}" 
