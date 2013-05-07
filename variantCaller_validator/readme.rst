@@ -11,9 +11,9 @@ Validate Variant Caller
 2. command.
 -------------
 1) Set truth file
-(a) Germline data takes one truth file
+    #Germline data takes one truth file
     TRUTH_FILES="-t ${MAJOR_TRUTH_FILE}"
-(b) Somatic data takes two truth files
+    #Somatic data takes two truth files
     TRUTH_FILES="-t ${MAJOR_TRUTH_FILE} -T ${MINOR_TRUTH_FILE}"
 
 2) Start Validator
