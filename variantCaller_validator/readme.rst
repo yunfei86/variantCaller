@@ -1,14 +1,20 @@
 Validate Variant Caller
 =============================
 
-1. create truth file.
+1. prerequisites.
+-------------
+1) bamtools - "https://github.com/pezmaster31/bamtools/wiki/Building-and-installing"
+2) cmake
+
+
+2. create truth file.
 -------------
 1) Latest truth file locate at "/results/plugins/validateVariantCaller/files/"
 2) They are SNP and indel separated, while validator takes merged truth file, therefore we need to merge them (cat file1.bed file2.bed > comb.bed)
 3) Before merging, find needed SNP and indel truth files at "https://iontorrent.jira.com/wiki/display/TS/TVC+Regression+Test+-+Reference+Page"
 
 
-2. command.
+3. command.
 -------------
 
 
