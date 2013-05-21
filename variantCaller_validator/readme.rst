@@ -1,7 +1,7 @@
 Validate Variant Caller
 =============================
 
-1. prerequisites.::strike
+1. :strike:prerequisites.
 -------------
 1) bamtools - "https://github.com/pezmaster31/bamtools/wiki/Building-and-installing"
 2) cmake
