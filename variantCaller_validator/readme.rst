@@ -44,10 +44,11 @@ Validate Variant Caller
     
     
     
-4. Install required library for CentOS.
+4. Install required library for CentOS - then you will get "Segmentation fault".... Give up. Please install on TS machine only
 -------------
 
 Error msg::
+
     /home/liy15/test/variantCaller/variantCaller_validator/variantValidator_multi \
     >    -i "${OUT_FOLDER}/${OUT_NAME}.vcf" \
     >    -F "${OUT_FOLDER}/${OUT_NAME}_filtered.vcf" \
