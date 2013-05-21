@@ -1,7 +1,7 @@
 Validate Variant Caller
 =============================
 
-1. prerequisites.
+1. prerequisites. - NO need anymore
 -------------
 1) bamtools - "https://github.com/pezmaster31/bamtools/wiki/Building-and-installing"
 2) cmake
@@ -24,6 +24,11 @@ Validate Variant Caller
     $ TRUTH_FILES="-t ${MAJOR_TRUTH_FILE}"
     $ #Somatic data takes two truth files
     $ TRUTH_FILES="-t ${MAJOR_TRUTH_FILE} -T ${MINOR_TRUTH_FILE}"
+
+
+-  Import bamtools library::
+    $ BAM_TOOLS=./bamtools
+    $ export LD_LIBRARY_PATH=${BAM_TOOLS}
 
 
 -  Start Validator::
