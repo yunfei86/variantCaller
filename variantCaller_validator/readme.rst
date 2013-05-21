@@ -41,3 +41,26 @@ Validate Variant Caller
     $ -r ${REF_FILE} 
     $ ${TRUTH_FILES} 
     $ -o ${OUT_FOLDER
+    
+    
+    
+4. Install required library for CentOS.
+-------------
+
+Error msg::
+    /home/liy15/test/variantCaller/variantCaller_validator/variantValidator_multi \
+    >    -i "${OUT_FOLDER}/${OUT_NAME}.vcf" \
+    >    -F "${OUT_FOLDER}/${OUT_NAME}_filtered.vcf" \
+    >    -b ${INPUT_BAM} \
+    >    -r ${REF_FILE} \
+    >    ${TRUTH_FILES} \
+    >    -o ${OUT_FOLDER}
+    /home/liy15/test/variantCaller/variantCaller_validator/variantValidator_multi: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.11' not found (required by /home/liy15/test/variantCaller/variantCaller_validator/variantValidator_multi)
+    /home/liy15/test/variantCaller/variantCaller_validator/variantValidator_multi: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.9' not found (required by /home/liy15/test/variantCaller/variantCaller_validator/variantValidator_multi)
+    /home/liy15/test/variantCaller/variantCaller_validator/variantValidator_multi: /lib64/libc.so.6: version `GLIBC_2.7' not found (required by /home/liy15/test/variantCaller/variantCaller_validator/bamtools/libbamtools.so.2.2.2)
+    /home/liy15/test/variantCaller/variantCaller_validator/variantValidator_multi: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.11' not found (required by /home/liy15/test/variantCaller/variantCaller_validator/bamtools/libbamtools.so.2.2.2)
+    /home/liy15/test/variantCaller/variantCaller_validator/variantValidator_multi: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.9' not found (required by /home/liy15/test/variantCaller/variantCaller_validator/bamtools/libbamtools.so.2.2.2)
+    
+Solution:
+1) /lib64/libc.so.6 - http://blog.csdn.net/iomato/article/details/8462768
+2) /usr/lib64/libstdc++.so.6 - http://stackoverflow.com/questions/7150409/libstdc-glibcxx-version-errors
