@@ -27,6 +27,7 @@ Validate Variant Caller
 
 
 -  Import bamtools library::
+
     $ BAM_TOOLS=./bamtools
     $ export LD_LIBRARY_PATH=${BAM_TOOLS}
 
